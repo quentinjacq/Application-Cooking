@@ -19,14 +19,14 @@ namespace Application_Cooking
     /// </summary>
     public partial class ConsulterRecetteCommande : Window
     {
-        public ConsulterRecetteCommande(List<string[]> elements_recette,)
+        public ConsulterRecetteCommande(List<string[]> elements_recette)
         {
             InitializeComponent();
             Nom_recette.Text = elements_recette[0][0];
             prix.Text = elements_recette[0][2];
             desc.Text = elements_recette[0][1];
             type.Text = elements_recette[0][6];
-
+            //salut sa va
             List<string[]> produits = Database.CheckProduitInRecette(Database.maConnexion(), Nom_recette.Text);
             for (int i = 0; i < produits.Count; i++)
             {
