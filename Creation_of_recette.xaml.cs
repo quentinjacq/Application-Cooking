@@ -19,6 +19,11 @@ namespace Application_Cooking
     /// </summary>
     public partial class Creation_of_recette : Window
     {
+        public void Ajouter_Produits (string produit, int quantite)
+        {
+            string list = "Produits: " + produit + "Quantité: " + quantite.ToString();
+            List_Produits.Items.Add(list);
+        }
         public Creation_of_recette(Creation_Recette creation)
         {
             InitializeComponent();
@@ -28,8 +33,7 @@ namespace Application_Cooking
             Prix_Recette.Text = creation.Prix.ToString();
             foreach (KeyValuePair<string, int> var in creation.Produits)
             {
-                string list = "Produits: " + var.Key + "Quantité: " + var.Value.ToString();
-                List_Produits.Items.Add(list);
+                Ajouter_Produits(var.Key, var.Value);
             }
             
             // besoin de rajouter le dictionnaire produits en /all
@@ -45,8 +49,8 @@ namespace Application_Cooking
             string type = Type_Recette.Text;
             int prix =int.Parse(Prix_Recette.Text);
             //Creation_Recette creation = new Creation_Recette(nom_recette,descriptif,type,prix,produits);
-            //Ajouter_Produits ajouter =new Ajouter_Produits(creation);
-            //ajouter.ShowDialog();
+            Ajouter_Produits ajouter =new Ajouter_Produits(this);
+            ajouter.ShowDialog();
             this.Close();
 
         }

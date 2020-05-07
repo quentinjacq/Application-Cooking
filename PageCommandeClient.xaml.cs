@@ -21,13 +21,15 @@ namespace Application_Cooking
     /// </summary>
     public partial class PageCommandeClient : Window
     {
-        
+         public Client client;
+           
 
          public PageCommandeClient(Client client_connecte)
          {
             InitializeComponent();
             Bonjour.Text = Bonjour.Text + client_connecte.Prenom_client;
             int num_page = 0;
+            this.client = client_connecte;
             List<string[]> commande = Database.ListeRecette(Database.maConnexion(), 0, num_page, null, null);
             Titre1.Content = commande[0][0];
             text1.Text = commande[0][1];
@@ -47,8 +49,6 @@ namespace Application_Cooking
             Titre6.Content = commande[5][0];
             text6.Text = commande[5][1];
             prix6.Text = commande[5][2];
-
-            
          }
 
 

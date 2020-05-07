@@ -10,6 +10,7 @@ namespace Application_Cooking
 {
     class Database
     {
+
         public static int NbClients(MySqlConnection maConnexion, bool CdR)
         {
             maConnexion.Open();

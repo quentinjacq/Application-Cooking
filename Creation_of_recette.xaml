@@ -32,7 +32,7 @@
             <TextBlock Text="Descriptif :" Grid.Column="0" Grid.Row="2" FontSize ="18" FontWeight="Bold" Margin="40 10 0 10 " />
             <TextBox x:Name="Desc_Recette" Grid.Column="0" Grid.Row="3" Padding="2" Height="100" Margin="40 0 40 10"/>
             
-            <TextBlock Text="Porduits :" Grid.Column="1" Grid.Row="2" FontSize ="18" FontWeight="Bold" Margin="40 10 250 10 " />
+            <TextBlock Text="Produits :" Grid.Column="1" Grid.Row="2" FontSize ="18" FontWeight="Bold" Margin="40 10 250 10 " />
             <Button x:Name="Ajouter_produits" Content="+" Grid.Column="1" Grid.Row="2" Width="20" Height="20" Margin="-80 0 0 0" HorizontalAlignment="Center" Click="Ajouter_produits_Click"/>
             <ListBox x:Name="List_Produits" Grid.Column="1" Grid.Row="3" Height="100" Margin="10 0 0 0" Width="300" Grid.ColumnSpan="2"/>
 

@@ -20,11 +20,13 @@ namespace Application_Cooking
     /// </summary>
     public partial class Ajouter_Produits : Window
     {
-        string produit;
-        string quantité;
-        public Ajouter_Produits(Creation_Recette creation)
+
+
+        Creation_of_recette creation;
+        public Ajouter_Produits(Creation_of_recette creation)
         {
             InitializeComponent();
+            this.creation = creation;
             Autre_unite.IsReadOnly = true;
             Quantité_produit.IsReadOnly = true;
             unité.IsReadOnly = true;
@@ -35,12 +37,12 @@ namespace Application_Cooking
         {
             if (Nom_produit.Text != "")
             {
-                this.produit = Nom_produit.Text;
-                unité.IsReadOnly = false;
+                //this.produit = Nom_produit.Text;
+                //unité.IsReadOnly = false;
             }
             else
             {
-                this.produit = List_produits.SelectedItem.ToString();
+                //this.produit = List_produits.SelectedItem.ToString();
                 List<string[]> detail_produit = Database.DetailProduit(Database.maConnexion(), List_produits.SelectedItem.ToString());
                 unité.SelectedItem = detail_produit[0][2];
             }
@@ -58,6 +60,9 @@ namespace Application_Cooking
 
         private void Ajouter_produit_Click(object sender, RoutedEventArgs e)
         {
+            this.creation.Ajouter_Produits("MonProduit", 20);
+            this.creation.Show();
+            this.Close();
             if (Quantité_produit.Text == "" || (unité.SelectedItem.ToString()!="Autre" && Autre_unite.Text == ""))
             {
                 MessageBox.Show("Des zones n'ont pas été remplies.");
