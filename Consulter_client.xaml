@@ -1,0 +1,78 @@
+﻿<Window x:Class="Application_Cooking.Consulter_client"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application_Cooking"
+        mc:Ignorable="d"
+        Title="Consulter_client" Height="400" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <TextBlock Text="Information sur le Client" FontSize ="25" FontWeight="Bold" Margin="40 30 0 20 " />
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.75*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Nom :" Grid.Column="0" Grid.Row="1" FontSize ="18" FontWeight="Bold" Margin="40 10 0 0 " />
+            <TextBlock Text="Numéro de téléphone :" Grid.Column="1" Grid.Row="1" FontSize ="18" FontWeight="Bold" Margin="10 10 0 0 " />
+            <TextBlock Text="Email :" Grid.Column="2" Grid.Row="1" FontSize ="18" FontWeight="Bold" Margin="30 10 0 0 " />
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.75*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Jacquemot" Grid.Column="0" Grid.Row="1" FontSize ="16"  Margin="40 10 0 0 " />
+            <TextBlock Text="0605060408" Grid.Column="1" FontSize ="16"  Margin="10 10 0 0 " />
+            <TextBlock Text="salut.jeteste@wpf.com" Grid.Column="2" Grid.Row="1" FontSize ="16"  Margin="30 10 0 0 " />
+        </Grid>
+
+        
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.75*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Prenom :" Grid.Column="0" Grid.Row="1" FontSize ="18" FontWeight="Bold" Margin="40 30 0 0 " />
+            <TextBlock Text="Adresse :" Grid.Column="1" Grid.Row="1" FontSize ="18" FontWeight="Bold" Margin="10 30 0 0 " />
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.75*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Quentin" Grid.Column="0" Grid.Row="1" FontSize ="16" Margin="40 10 0 0 " />
+            <TextBlock Text="3 chemin de la sierra" Grid.Column="1" Grid.Row="1" FontSize ="16" Margin="10 10 0 0 " />
+        </Grid>
+
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.75*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="Age :" Grid.Column="0" Grid.Row="1" FontSize ="18" FontWeight="Bold" Margin="40 30 0 0 " />
+            <TextBlock Text="Ville :" Grid.Column="1" Grid.Row="1" FontSize ="18" FontWeight="Bold" Margin="10 30 0 0 " />
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.75*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Text="21" Grid.Column="0" Grid.Row="1" FontSize ="16" Margin="40 10 0 0 " />
+            <TextBlock Text="Calvi" Grid.Column="1" Grid.Row="1" FontSize ="16" Margin="10 10 0 0 " />
+            <Button x:Name="Retour_consulter_client" Content="Retour" Grid.Column="2" Width="100" Height="30" Margin="0 0 0 0"/>
+        </Grid>
+
+
+
+    </StackPanel>
+</Window>

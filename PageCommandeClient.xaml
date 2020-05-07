@@ -1,0 +1,122 @@
+﻿<Window x:Class="Application_Cooking.PageCommandeClient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application_Cooking"
+        mc:Ignorable="d"
+        Title="PageCommandeClient" Height="400" Width="750" Background="#D99355" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <!--on définit le quadrillage de la window pour savoir comment palcer les widgets-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- on va d'abord placer tous les textes -->
+        <TextBlock x:Name="Bonjour" Text="Bonjour " Grid.Column="0" Grid.Row="0" FontSize ="25" FontWeight="Bold" Margin="20 20 0 0 " />
+        <TextBlock Text="Rechercher : " Grid.Column="0" Grid.Row="1" FontSize ="16" FontWeight="Bold" Margin="20 5 0 0 " />
+        <TextBlock Text="Trier par : " Grid.Column="0" Grid.Row="2" FontSize ="16" FontWeight="Bold" Margin="40 0 0 0 " />
+
+        <Button x:Name="Titre1" Content="Titre 1" Grid.Column="0" Grid.Row="3" FontSize ="14" FontWeight="Bold" Margin="200 0 10 0 " Click="Titre1_Click" >
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <TextBlock Text="{TemplateBinding Content}" TextDecorations="Underline" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock x:Name="text1" Text="Trier par :aze rjkaz  aze azer azer azerazera azeraze razer azerazer azer aaze razer" Grid.Column="0" Grid.Row="3" FontSize ="10"  Margin="200 20 0 0 " TextWrapping="Wrap" />
+        <TextBlock x:Name="prix1" Text="Prix cooks " Grid.Column="0" Grid.Row="3" FontSize ="10"  Margin="20 55 0 0 " />
+        <Rectangle Grid.Column="0" Grid.Row="3" Fill="#eee" HorizontalAlignment="Left" Margin="20 2 0 0"  Grid.RowSpan="3" Stroke="Black" VerticalAlignment="Top" Width="160"  Height="55"/>
+
+        <Button x:Name="Titre2" Content="Titre 2" Grid.Column="1" Grid.Row="3" FontSize ="14" FontWeight="Bold" Margin="200 0 10 0 " Click="Titre2_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <TextBlock Text="{TemplateBinding Content}" TextDecorations="Underline" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock x:Name="text2" Text="Trier par :aze rjkaz  aze azer azer azerazera azeraze razer azerazer azer aaze razer" Grid.Column="1" Grid.Row="3" FontSize ="10"  Margin="200 20 10 0 " TextWrapping="Wrap" />
+        <TextBlock x:Name="prix2" Text="Prix cooks " Grid.Column="1" Grid.Row="3" FontSize ="10"  Margin="20 55 0 0 " />
+        <Rectangle Grid.Column="1" Grid.Row="3" Fill="#eee" HorizontalAlignment="Left" Margin="20 2 0 0"  Grid.RowSpan="3" Stroke="Black" VerticalAlignment="Top" Width="160"  Height="55"/>
+
+        <Button x:Name="Titre3" Content="Titre 3" Grid.Column="0" Grid.Row="4" FontSize ="14" FontWeight="Bold" Margin="200 0 10 0 " Click="Titre3_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <TextBlock Text="{TemplateBinding Content}" TextDecorations="Underline" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock x:Name="text3" Text="Trier par :aze rjkaz  aze azer azer azerazera azeraze razer azerazer azer aaze razer" Grid.Column="0" Grid.Row="4" FontSize ="10"  Margin="200 20 0 0 " TextWrapping="Wrap" />
+        <TextBlock x:Name="prix3" Text="Prix cooks " Grid.Column="0" Grid.Row="4" FontSize ="10"  Margin="20 55 0 0 " />
+        <Rectangle Grid.Column="0" Grid.Row="4" Fill="#eee" HorizontalAlignment="Left" Margin="20 2 0 0"  Grid.RowSpan="3" Stroke="Black" VerticalAlignment="Top" Width="160"  Height="55"/>
+
+        <Button x:Name="Titre4" Content="Titre 4" Grid.Column="1" Grid.Row="4" FontSize ="14" FontWeight="Bold" Margin="200 0 10 0 " Click="Titre4_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <TextBlock Text="{TemplateBinding Content}" TextDecorations="Underline" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock x:Name="text4" Text="Trier par :aze rjkaz  aze azer azer azerazera azeraze razer azerazer azer aaze razer" Grid.Column="1" Grid.Row="4" FontSize ="10"  Margin="200 20 10 0 " TextWrapping="Wrap" />
+        <TextBlock x:Name="prix4" Text="Prix cooks " Grid.Column="1" Grid.Row="4" FontSize ="10"  Margin="20 55 0 0 " />
+        <Rectangle Grid.Column="1" Grid.Row="4" Fill="#eee" HorizontalAlignment="Left" Margin="20 2 0 0"  Grid.RowSpan="3" Stroke="Black" VerticalAlignment="Top" Width="160"  Height="55"/>
+
+        <Button x:Name="Titre5" Content="Titre 5" Grid.Column="0" Grid.Row="5" FontSize ="14" FontWeight="Bold" Margin="200 0 10 0 " Click="Titre5_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <TextBlock Text="{TemplateBinding Content}" TextDecorations="Underline" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock x:Name="text5" Text="Trier par :aze rjkaz  aze azer azer azerazera azeraze razer azerazer azer aaze razer" Grid.Column="0" Grid.Row="5" FontSize ="10"  Margin="200 20 0 0 " TextWrapping="Wrap" />
+        <TextBlock x:Name="prix5" Text="Prix cooks " Grid.Column="0" Grid.Row="5" FontSize ="10"  Margin="20 55 0 0 " />
+        <Rectangle Grid.Column="0" Grid.Row="5" Fill="#eee" HorizontalAlignment="Left" Margin="20 2 0 0"  Grid.RowSpan="3" Stroke="Black" VerticalAlignment="Top" Width="160"  Height="55"/>
+
+        <Button x:Name="Titre6" Content="Titre 6" Grid.Column="1" Grid.Row="5" FontSize ="14" FontWeight="Bold" Margin="200 0 10 0 " Click="Titre6_Click">
+            <Button.Template>
+                <ControlTemplate TargetType="Button">
+                    <TextBlock Text="{TemplateBinding Content}" TextDecorations="Underline" />
+                </ControlTemplate>
+            </Button.Template>
+        </Button>
+        <TextBlock x:Name="text6" Text="Trier par :aze rjkaz  aze azer azer azerazera azeraze razer azerazer azer aaze razer" Grid.Column="1" Grid.Row="5" FontSize ="10"  Margin="200 20 10 0 " TextWrapping="Wrap" />
+        <TextBlock x:Name="prix6" Text="Prix cooks " Grid.Column="1" Grid.Row="5" FontSize ="10"  Margin="20 55 0 0 " />
+        <Rectangle Grid.Column="1" Grid.Row="5" Fill="#eee" HorizontalAlignment="Left" Margin="20 2 0 0"  Grid.RowSpan="3" Stroke="Black" VerticalAlignment="Top" Width="160"  Height="55"/>
+
+        <TextBlock Text="Page" Grid.Column="1" Grid.Row="6" FontSize ="14"  TextDecorations="Underline" Margin="-17 0 0 0 " />
+
+        <!-- on crée tous les boutons (profil, rechercher...) et les zones d'entrées-->
+        <TextBox x:Name="Rechercher" Grid.Column="0" Grid.Row="1" Padding="2" Margin="130 10 0 0"/>
+        <Button x:Name="recherche_txt" Content="☼" Grid.Column="1" Grid.Row="1" Margin="10 6 0 0" Height="20" Width="20" Grid.RowSpan="2" VerticalAlignment="Top" HorizontalAlignment="left" Click="recherche_txt_Click" />
+
+        <ComboBox Name="Combobox_Commande" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" Margin="130 5 0 5"  VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Entrée"/>
+            <ComboBoxItem Content="plat principal"/>
+            <ComboBoxItem Content="Dessert"/>
+            <ComboBoxItem Content="Boisson"/>
+        </ComboBox>
+        <Button x:Name="recherche_Combo" Content="☼" Grid.Column="0" Grid.Row="2" Margin="0 0 90 0" Height="20" Width="20" HorizontalAlignment="Right" Click="recherche_Combo_Click"/>
+
+        <Button x:Name="Profil" Content="☻" Grid.Column="1" Grid.Row="0" Margin="0 0 40 0" Height="20" Width="20" HorizontalAlignment="Right" Click="Profil_Click"/>
+
+        <Button x:Name="page_suiv" Content="→" Grid.Column="1" Grid.Row="6" Margin="20,4.4,0,0" Height="15" Width="20" HorizontalAlignment="Left" Grid.RowSpan="2" VerticalAlignment="Top" Click="page_suiv_Click"/>
+        <Button x:Name="Page_prec" Content="←" Grid.Column="0" Grid.Row="6" Margin="0,4.4,20,0" Height="15" Width="20" HorizontalAlignment="Right" Grid.RowSpan="2" VerticalAlignment="Top" Click="Page_prec_Click" />
+
+        <Button x:Name="Commander" Content="Commander" Grid.Column="0" Grid.Row="7" Margin="0 0 0 0" Height="25" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
+
+
+
+    </Grid>
+</Window>

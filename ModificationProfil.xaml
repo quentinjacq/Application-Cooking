@@ -1,0 +1,79 @@
+﻿<Window x:Class="Application_Cooking.ModificationProfil"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application_Cooking"
+        mc:Ignorable="d"
+        Title="ModificationProfil" Height="400" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <!-- on place les textes -->
+        <TextBlock Text="Modification du Profil " FontSize ="25" FontWeight="Bold" Margin="0 30 0 20 " HorizontalAlignment="Center"/>
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <TextBlock Text="Numéro de Téléphone :" Grid.Column="0" FontSize ="16" FontWeight="Bold" Margin="0 10 0 0 " HorizontalAlignment="Center"/>
+            <TextBlock Text="Email :" Grid.Column="1" FontSize ="16" FontWeight="Bold" Margin="0 10 0 0 " HorizontalAlignment="Center"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            
+            <TextBox x:Name="Modif_Num_tel" Grid.Column="0" Padding="2" Margin="50 10 50 10"/>
+            <TextBox x:Name="Modif_email" Grid.Column="1" Padding="2" Margin="50 10 50 10"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Adresse :" Grid.Column="0" FontSize ="16" FontWeight="Bold" Margin="0 10 0 0 " HorizontalAlignment="Center"/>
+            <TextBlock Text="Nouveau Mot de passe :" Grid.Column="1" FontSize ="16" FontWeight="Bold" Margin="0 10 0 0 " HorizontalAlignment="Center"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="Modif_Adresse" Grid.Column="0" Padding="2" Margin="50 10 50 10"/>
+            <TextBox x:Name="Nouveau_MDP" Grid.Column="1" Padding="2" Margin="50 10 50 10"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="Ville : " Grid.Column="0" FontSize ="16" FontWeight="Bold" Margin="0 10 0 0 " HorizontalAlignment="Center"/>
+            <TextBlock Text="Confirmer Nouveau mot de passe :" Grid.Column="1" FontSize ="16" FontWeight="Bold" Margin="0 10 0 0 " HorizontalAlignment="Center"/>
+        </Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <TextBox x:Name="Modif_Ville" Grid.Column="0" Padding="2" Margin="50 10 50 10"/>
+            <TextBox x:Name="Confirmer_Nouveau_mdp" Grid.Column="1" Padding="2" Margin="50 10 50 10"/>
+        </Grid>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Button x:Name="Confirmer_Modification" Content="Modifier" Grid.Column="0" Margin="0 20 30 0" Height="25" Width="65" HorizontalAlignment="Right"/>
+            <Button x:Name="Retour_modif" Content="Retour" Grid.Column="1" Margin="30 20 0 0" Height="25" Width="65" HorizontalAlignment="Left"/>
+        </Grid>
+
+    </StackPanel>
+</Window>

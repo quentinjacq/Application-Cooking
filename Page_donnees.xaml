@@ -1,0 +1,56 @@
+﻿<Window x:Class="Application_Cooking.Page_donnees"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application_Cooking"
+        mc:Ignorable="d"
+        Title="Page_donnees" Height="400" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="0.75*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="Profil" Content="☻" Margin="0 0 40 0" Height="20" Width="20" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="0"/>
+        <Button x:Name="Retour_données" Content="Retour" Margin="0 0 100 0" Height="20" Width="50" HorizontalAlignment="Right" Grid.Column="1" Grid.Row="0"/>
+        <TextBlock Text="les Données..." FontSize ="25" FontWeight="Bold" Margin="30 20 0 0 " Grid.Column="0" Grid.Row="0"/>
+
+        <TextBlock Text="Les Créateurs de Recettes de la Semaine" FontSize ="18" FontWeight="Bold" Margin="30 5 0 0 " Grid.Column="0" Grid.Row="1"/>
+        <TextBlock x:Name="Createur1_S" Text="Créateurs 2" FontSize ="16"  Margin="40 5 0 0 " Grid.Column="0" Grid.Row="2"/>
+        <TextBlock x:Name="Createur2_S" Text="Créateurs 3" FontSize ="16"  Margin="40 5 0 0 " Grid.Column="0" Grid.Row="3"/>
+        <TextBlock x:Name="Createur3_S" Text="Créateurs 4" FontSize ="16"  Margin="40 5 0 0 " Grid.Column="0" Grid.Row="4"/>
+        <TextBlock x:Name="Createur4_S" Text="Créateurs 5" FontSize ="16"  Margin="40 5 0 0 " Grid.Column="0" Grid.Row="5"/>
+        <TextBlock x:Name="Createur5_S" Text="Créateurs 6" FontSize ="16"  Margin="40 5 0 0 " Grid.Column="0" Grid.Row="6"/>
+
+        <TextBlock Text="Les Créateurs d'OR" FontSize ="18" FontWeight="Bold" Margin="50 5 0 0 " Grid.Column="1" Grid.Row="1"/>
+        <TextBlock x:Name="Createur1_TT" Text="Créateurs 2" FontSize ="16"  Margin="60 5 0 0 " Grid.Column="1" Grid.Row="2"/>
+        <TextBlock x:Name="Createur2_TT" Text="Créateurs 3" FontSize ="16"  Margin="60 5 0 0 " Grid.Column="2" Grid.Row="3"/>
+        <TextBlock x:Name="Createur3_TT" Text="Créateurs 4" FontSize ="16"  Margin="60 5 0 0 " Grid.Column="3" Grid.Row="4"/>
+        <TextBlock x:Name="Createur4_TT" Text="Créateurs 5" FontSize ="16"  Margin="60 5 0 0 " Grid.Column="4" Grid.Row="5"/>
+        <TextBlock x:Name="Createur5_TT" Text="Créateurs 6" FontSize ="16"  Margin="60 5 0 0 " Grid.Column="5" Grid.Row="6"/>
+
+
+        <TextBlock Text="Top 5 des Recettes (semaine)" FontSize ="18" FontWeight="Bold" Margin="30 5 0 0 " Grid.Column="0" Grid.Row="7"/>
+        <ListBox x:Name="list_Top5_S" Grid.Column="0" Grid.Row="8" HorizontalAlignment="Left" Height="40" Margin="30 0 0 0" Width="300" Grid.ColumnSpan="2"/>
+        <Button x:Name="Consulter_Top5_S" Content="Consulter" Grid.Column="0" Grid.Row="10" Width="100" Height="30" HorizontalAlignment="Center" Margin="0 0 0 0"/>
+
+        <TextBlock Text="Top 5 des Recettes (Tout temps)" FontSize ="18" FontWeight="Bold" Margin="50 5 0 0 " Grid.Column="1" Grid.Row="7"/>
+        <ListBox x:Name="list_Top5_TT" Grid.Column="1" Grid.Row="8" HorizontalAlignment="Left" Height="40" Margin="30 0 0 0" Width="300" Grid.ColumnSpan="2"/>
+        <Button x:Name="Consulter_Top5_TT" Content="Consulter" Grid.Column="1" Grid.Row="10" Width="100" Height="30" HorizontalAlignment="Center" Margin="0 0 0 0"/>
+
+
+    </Grid>
+</Window>

@@ -1,0 +1,19 @@
+﻿<Window x:Class="Application_Cooking.Démo4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application_Cooking"
+        mc:Ignorable="d"
+        Title="Démo4" Height="400" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <TextBlock Text="Bienvenue Dans la Démo " FontSize ="32" FontWeight="Bold" Margin="0 20 0 10 " HorizontalAlignment="Center" />
+        <TextBlock Text="Voici la liste des Produits ayant une quantité faible." FontSize ="22" FontWeight="Bold" Margin="0 10 0 10 " HorizontalAlignment="Center" />
+        <ListView x:Name="list_démo4" Grid.Column="0" HorizontalAlignment="Center" Height="150" Margin="0 10 0 0" Width="300" Grid.ColumnSpan="2" />
+        
+        <TextBox x:Name="Produit_demo" HorizontalAlignment="Center" Grid.Row="0" Width="200" Padding="2" Margin="0 10 0 0" MaxLength="20"/>
+        <Button x:Name="Next" Content="Suivant" Width="100" Height="30" Margin="0 10 0 0" HorizontalAlignment="Center" Click="Next_Click"/>
+
+
+    </StackPanel>
+</Window>

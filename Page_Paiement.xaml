@@ -1,0 +1,24 @@
+﻿<Window x:Class="Application_Cooking.Page_Paiement"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application_Cooking"
+        mc:Ignorable="d"
+        Title="Page_Paiement" Height="400" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <TextBlock Text="Votre Commande : " FontSize ="25" FontWeight="Bold" Margin="0 40 0 0 " HorizontalAlignment="Center"/>
+        <ListView x:Name="List_Recette_comamande" HorizontalAlignment="Center" Height="150" Margin="0 20 0 0" Width="300" Grid.ColumnSpan="2"/>
+        <TextBlock Text="Prix Total (Cooks) à payer :" FontSize ="18" FontWeight="Bold" Margin="0 10 0 0 " HorizontalAlignment="Center"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="Payer_Commande" Content="Payer" Grid.Column="0" Width="100" Height="30"  HorizontalAlignment="Right" Margin="0 30 20 0"/>
+            <Button x:Name="Annuler_Paiement_Commande" Content="Annuler" Grid.Column="1" Width="100" Height="30"  HorizontalAlignment="Left" Margin="20 30 0 0"/>
+        </Grid>
+    </StackPanel>
+</Window>

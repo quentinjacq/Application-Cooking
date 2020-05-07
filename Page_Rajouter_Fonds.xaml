@@ -1,0 +1,32 @@
+﻿<Window x:Class="Application_Cooking.Page_Rajouter_Fonds"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application_Cooking"
+        mc:Ignorable="d"
+        Title="Page_Rajouter_Fonds" Height="400" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+
+        <TextBlock Text="Votre Porte Monnaie Cooking" FontSize ="25" FontWeight="Bold" Margin="0 40 0 0 " HorizontalAlignment="Center"/>
+        <TextBlock Text="Votre solde : " FontSize ="22" FontWeight="Bold" Margin="0 30 0 0 " HorizontalAlignment="Center"/>
+        <TextBlock Text="De combien souhaitez-vous l'incrémenter ?" FontSize ="18" FontWeight="Bold" Margin="0 20 0 0 " HorizontalAlignment="Center"/>
+        <TextBox x:Name="Ajout_fonds" Padding="2" Margin="0 10 0 10" Width="200" Height="25" HorizontalAlignment="Center"/>
+        <TextBlock Text="Par quel Moyen ?" FontSize ="18" FontWeight="Bold" Margin="0 0 0 0 " HorizontalAlignment="Center"/>
+        <ComboBox Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center" Margin="0 10 0 0"   Width="120">
+            <ComboBoxItem Content="Visa"/>
+            <ComboBoxItem Content="Carte Bancaire"/>
+            <ComboBoxItem Content="Paypal"/>
+        </ComboBox>
+
+            <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button x:Name="Payer_rajout" Content="Payer" Grid.Column="0" Width="100" Height="30"  HorizontalAlignment="Right" Margin="0 30 20 0"/>
+            <Button x:Name="Annuler_Rajout" Content="Annuler" Grid.Column="1" Width="100" Height="30"  HorizontalAlignment="Left" Margin="20 30 0 0"/>
+        </Grid>
+    </StackPanel>
+</Window>

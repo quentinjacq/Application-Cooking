@@ -1,0 +1,48 @@
+﻿<Window x:Class="Application_Cooking.Creation_of_recette"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application_Cooking"
+        mc:Ignorable="d"
+        Title="Creation_of_recette" Height="400" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <TextBlock Text="Creation D'une Recette" FontSize ="25" FontWeight="Bold" Margin="0 20 0 10 " HorizontalAlignment="Center"/>
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Text="Nom de la Recette :" Grid.Column="0" FontSize ="18" FontWeight="Bold" Margin="40 10 0 10 " />
+            <TextBox x:Name="Nom_Recette" Grid.Column="0" Grid.Row="1" Padding="2" Height="25" Margin="40 0 40 10"/>
+            
+            <TextBlock Text="Type de la Recette :" Grid.Column="1" FontSize ="18" FontWeight="Bold" Margin="40 10 0 0 " />
+            <TextBox x:Name="Type_Recette" Grid.Column="1" Grid.Row="1" Padding="2" Height="25" Margin="40 0 40 10"/>
+
+            <TextBlock Text="Descriptif :" Grid.Column="0" Grid.Row="2" FontSize ="18" FontWeight="Bold" Margin="40 10 0 10 " />
+            <TextBox x:Name="Desc_Recette" Grid.Column="0" Grid.Row="3" Padding="2" Height="100" Margin="40 0 40 10"/>
+            
+            <TextBlock Text="Porduits :" Grid.Column="1" Grid.Row="2" FontSize ="18" FontWeight="Bold" Margin="40 10 250 10 " />
+            <Button x:Name="Ajouter_produits" Content="+" Grid.Column="1" Grid.Row="2" Width="20" Height="20" Margin="-80 0 0 0" HorizontalAlignment="Center" Click="Ajouter_produits_Click"/>
+            <ListBox x:Name="List_Produits" Grid.Column="1" Grid.Row="3" Height="100" Margin="10 0 0 0" Width="300" Grid.ColumnSpan="2"/>
+
+            <TextBlock Text="Prix (cooks) :" Grid.Column="0" Grid.Row="4" FontSize ="18" FontWeight="Bold" Margin="40 10 0 10 " />
+            <TextBox x:Name="Prix_Recette" Grid.Column="0" Grid.Row="4" Padding="2" Height="25" Width="70" Margin="10 0 0 0" HorizontalAlignment="Center" RenderTransformOrigin="0.5,0.504"/>
+
+            <Button x:Name="Retour_Page_commande" Content="Retour" Grid.Column="1" Grid.Row="4" Width="100" Height="30" Margin="0 20 40 0" HorizontalAlignment="Right"/>
+            <Button x:Name="Ajouter_recette" Content="Ajouter La Recette" Grid.Column="1" Grid.Row="4" Width="120" Height="30" Margin="0 20 200 0" HorizontalAlignment="Right" Click="Ajouter_recette_Click"/>
+
+        </Grid>
+
+    </StackPanel>
+</Window>

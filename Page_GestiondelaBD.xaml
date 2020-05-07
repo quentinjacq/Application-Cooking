@@ -1,0 +1,55 @@
+﻿<Window x:Class="Application_Cooking.Page_GestiondelaBD"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application_Cooking"
+        mc:Ignorable="d"
+        Title="Page_GestiondelaBD" Height="400" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <Button x:Name="Profil" Content="☻" Margin="0 20 40 0" Height="20" Width="20" HorizontalAlignment="Right"/>
+        <TextBlock Text="Gestion de L'information " Grid.Column="0" FontSize ="25" FontWeight="Bold" Margin="40 -20 0 20 " />
+        
+
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- on va d'abord placer tous les textes dans la partie gauche de la fenetre-->
+            <TextBlock Text="Liste des Clients : " Grid.Column="0" FontSize ="18" FontWeight="Bold" Margin="40 0 0 0" Grid.ColumnSpan="2" />
+            <TextBlock Text="Liste des Recettes : " Grid.Column="1" FontSize ="18" FontWeight="Bold" Margin="40 0 0 0" Grid.ColumnSpan="2" />
+        </Grid>
+       
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- on va d'abord placer tous les textes dans la partie gauche de la fenetre-->
+            <ListBox x:Name="liste_clients" Grid.Column="0" HorizontalAlignment="Left" Height="150" Margin="40 0 0 0" Width="300" Grid.ColumnSpan="2"/>
+            <ListBox x:Name="liste_recettes" Grid.Column="1" HorizontalAlignment="Left" Height="150" Margin="40 0 0 0" Width="300" Grid.ColumnSpan="2"/>
+        </Grid>
+
+        
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- on va d'abord placer tous les textes dans la partie gauche de la fenetre-->
+            <Button x:Name="Supprimer_client" Content="Supprimer" Grid.Column="0" Width="100" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="60 30 0 0"/>
+            <Button x:Name="Consulter_clients" Content="Consulter" Grid.Column="0" Width="100" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 30 90 0"/>
+            <Button x:Name="Consulter" Content="Consulter" Grid.Column="1" Width="100" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="60 30 0 0"/>
+            <Button x:Name="recommander" Content="Recommander" Grid.Column="1" Width="100" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="0 30 90 0"/>
+        </Grid>
+        <!-- puis on fait des boutons -->
+        <Button x:Name="Retour_menu" Content="Retour Au Menu" Grid.Column="0" Width="100" Height="30" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="-15 30 0 0"/>
+
+        
+    </StackPanel>
+</Window>

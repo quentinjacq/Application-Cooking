@@ -1,0 +1,47 @@
+﻿<Window x:Class="Application_Cooking.Consulter_Recette"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Application_Cooking"
+        mc:Ignorable="d"
+        Title="Consulter_Recette" Height="400" Width="750" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <StackPanel>
+        <TextBlock Text="Information sur la Recette" FontSize ="25" FontWeight="Bold" Margin="40 30 0 0 " />
+
+        <Grid>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="103*"/>
+                <ColumnDefinition Width="269*"/>
+                <ColumnDefinition Width="372*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Grid.ColumnSpan="2" Margin="0,0,0,444.4">
+                <TextBlock Text="Nom de la Recette :" Grid.Column="0" FontSize ="18" FontWeight="Bold" Margin="40 10 0 0 " />
+                <TextBlock x:Name="nom_recette" Text="Nom de la Recette :" Grid.Column="0" FontSize ="16"  Margin="40 0 0 0 " />
+                <TextBlock Text="Nombre de commande :" Grid.Column="0" FontSize ="18" FontWeight="Bold" Margin="40 10 0 0 " />
+                <TextBlock x:Name="nb_commande" Text="Nom de la Recette :" Grid.Column="0"  FontSize ="16"  Margin="40 0 0 0 " />
+                <TextBlock Text="Descriptif :" Grid.Column="0"  FontSize ="18" FontWeight="Bold" Margin="40 10 0 0 " />
+                <TextBlock x:Name="desc" Text="je suis le descriptif.je suis le descriptif.je suis le descriptif.je suis le descriptif.je suis le descriptif.je suis le descriptif.je suis le descriptif.je suis le descriptif.je suis le descriptif." Grid.Column="0"  FontSize ="16" Margin="40 0 0 0 " TextWrapping="Wrap"/>
+
+            </StackPanel>
+
+            <StackPanel Grid.Column="2" Margin="0,0,0,444.4">
+                <TextBlock Text="Type de la Recette :" Grid.Column="0" FontSize ="18" FontWeight="Bold" Margin="40 10 0 0 " />
+                <TextBlock x:Name="type" Text="Nom de la Recette :" Grid.Column="0" FontSize ="16"  Margin="40 0 0 0 " />
+                <TextBlock Text="Produits :" Grid.Column="0" FontSize ="18" FontWeight="Bold" Margin="40 10 0 0 " />
+                <ListView x:Name="ListView1" Margin="40 0 0 0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="200" Height="100" />
+
+                <TextBlock Text="Prix (cooks) :" Grid.Column="0"  FontSize ="18" FontWeight="Bold" Margin="40 10 0 0 " />
+                <TextBlock x:Name="prix" Text="price" Grid.Column="0"  FontSize ="16" Margin="40 0 0 0 " />
+
+                <Button x:Name="Retour_consulter_recette" Content="Retour" Grid.Column="2" Width="100" Height="30" Margin="0 0 40 0" HorizontalAlignment="Right"/>
+
+            </StackPanel>
+
+        </Grid>
+
+
+    </StackPanel>
+</Window>
